@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
-import { articleCategories } from "@/lib/content";
 import SearchOverlay from "@/components/SearchOverlay";
 
 const navItems = [
@@ -19,11 +18,19 @@ const footerLinks = [
   { href: "/hakkimda", label: "Hakkımda" },
   { href: "/hukuk-yazilari", label: "Hukuk Yazıları" },
   { href: "/uygulamadan-notlar", label: "Uygulamadan Notlar" },
-  { href: "/hukuk-yazilari", label: "İlgilendiğim Hukuk Alanları" },
   { href: "/iletisim", label: "İletişim" },
   { href: "/yasal-uyari", label: "Yasal Uyarı" },
   { href: "/kvkk-aydinlatma-metni", label: "KVKK Aydınlatma Metni" },
   { href: "/cerez-politikasi", label: "Çerez Politikası" },
+];
+
+const socialLinks = [
+  { href: "https://www.instagram.com/o.faruk.ozdmr", label: "Instagram", mark: "◎" },
+  {
+    href: "https://www.linkedin.com/in/ömer-faruk-özdemir-839173299?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    label: "LinkedIn",
+    mark: "in",
+  },
 ];
 
 export default function SiteShell({ children }: { children: ReactNode }) {
@@ -93,6 +100,9 @@ export default function SiteShell({ children }: { children: ReactNode }) {
               Bu sitede yer alan içerikler genel bilgilendirme amacı taşır; hukuki
               danışmanlık yerine geçmez.
             </p>
+            <p className="footer-brand-copyright">
+              © {year} Av. Ömer Faruk ÖZDEMİR. Tüm hakları saklıdır.
+            </p>
           </section>
 
           <section>
@@ -107,11 +117,19 @@ export default function SiteShell({ children }: { children: ReactNode }) {
           </section>
 
           <section>
-            <h3>İlgilendiğim Hukuk Alanları</h3>
-            <ul>
-              {articleCategories.map((category) => (
-                <li key={category.slug}>
-                  <Link href={`/hukuk-yazilari?kategori=${category.slug}`}>{category.title}</Link>
+            <h3>Sosyal Medya</h3>
+            <ul className="footer-social-list">
+              {socialLinks.map((item) => (
+                <li key={item.href}>
+                  <a
+                    aria-label={`${item.label} profilini yeni sekmede aç`}
+                    href={item.href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span aria-hidden="true">{item.mark}</span>
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -129,16 +147,7 @@ export default function SiteShell({ children }: { children: ReactNode }) {
             </Link>
           </section>
         </div>
-        <div className="copyright">
-          © {year} Av. Ömer Faruk ÖZDEMİR. Tüm hakları saklıdır.
-        </div>
       </footer>
-
-      <nav className="quick-access" aria-label="Hızlı erişim">
-        <Link href="/arama">Ara</Link>
-        <Link href="/iletisim">İletişim</Link>
-        <Link href="/hukuk-yazilari">Yazılar</Link>
-      </nav>
     </>
   );
 }

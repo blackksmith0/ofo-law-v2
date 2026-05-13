@@ -137,7 +137,12 @@ export default function Home() {
         <div className="section-head">
           <div>
             <p className="eyebrow">Alanlar</p>
-            <h2>İlgilendiğim Hukuk Alanları</h2>
+            <h2>Hukuki Değerlendirme Alanları</h2>
+            <p className="section-lead">
+              Ceza hukuku, iş hukuku, icra ve alacak ilişkileri, kira uyuşmazlıkları,
+              tazminat talepleri, miras ve taşınmaz hukuku gibi alanlarda uygulamaya dönük
+              hukuki değerlendirmeler.
+            </p>
           </div>
         </div>
         <div className="category-grid">
