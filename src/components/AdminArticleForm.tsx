@@ -1,6 +1,10 @@
-import { articleCategories } from "@/lib/content";
-import { saveArticleAction } from "@/lib/admin-actions";
+"use client";
+
+import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
 import AdminImageField from "@/components/AdminImageField";
+import { type AdminArticleFormState, saveArticleAction } from "@/lib/admin-actions";
+import { articleCategories } from "@/lib/content";
 
 type AdminArticleFormProps = {
   article?: {
@@ -21,11 +25,32 @@ type AdminArticleFormProps = {
   media?: { name: string; url: string }[];
 };
 
-export default function AdminArticleForm({ article, media = [] }: AdminArticleFormProps) {
-  const imageValue = article?.cover_image || article?.hero_image || "";
+const initialState: AdminArticleFormState = {
+  ok: false,
+  message: "",
+};
+
+function AdminSubmitButton() {
+  const { pending } = useFormStatus();
 
   return (
-    <form className="admin-form" action={saveArticleAction}>
+    <button type="submit" disabled={pending}>
+      {pending ? "Kaydediliyor..." : "Kaydet"}
+    </button>
+  );
+}
+
+export default function AdminArticleForm({ article, media = [] }: AdminArticleFormProps) {
+  const imageValue = article?.cover_image || article?.hero_image || "";
+  const [state, formAction] = useActionState(saveArticleAction, initialState);
+
+  return (
+    <form className="admin-form" action={formAction}>
+      {state.message && (
+        <p className={`admin-form-alert ${state.ok ? "success" : "error"}`} role="status">
+          {state.message}
+        </p>
+      )}
       {article?.id && <input name="id" type="hidden" value={article.id} />}
       <label>
         Başlık
@@ -116,7 +141,7 @@ export default function AdminArticleForm({ article, media = [] }: AdminArticleFo
         </label>
       </div>
       <div className="admin-actions">
-        <button type="submit">Kaydet</button>
+        <AdminSubmitButton />
       </div>
     </form>
   );

@@ -7,6 +7,16 @@ import { articleCategories } from "@/lib/content";
 import { createSupabaseAdminClient } from "@/lib/supabase/server";
 import { calculateReadingTime, slugifyTurkish } from "@/lib/utils";
 
+export type AdminArticleFormState = {
+  ok: boolean;
+  message: string;
+};
+
+const initialAdminArticleFormState: AdminArticleFormState = {
+  ok: false,
+  message: "",
+};
+
 function stringValue(formData: FormData, key: string) {
   return String(formData.get(key) || "").trim();
 }
@@ -48,7 +58,11 @@ export async function adminLogoutAction() {
   redirect("/admin8470/giris");
 }
 
-export async function saveArticleAction(formData: FormData) {
+export async function saveArticleAction(
+  _prevState: AdminArticleFormState = initialAdminArticleFormState,
+  formData: FormData,
+): Promise<AdminArticleFormState> {
+  void _prevState;
   const id = stringValue(formData, "id");
   const title = stringValue(formData, "title");
   const type = stringValue(formData, "type") === "note" ? "note" : "article";
@@ -59,12 +73,18 @@ export async function saveArticleAction(formData: FormData) {
   const categorySlug = type === "article" ? stringValue(formData, "categorySlug") : "";
   const category = articleCategories.find((item) => item.slug === categorySlug);
 
-  if (!title) throw new Error("Başlık boş olamaz.");
-  if (!slug) throw new Error("Slug boş olamaz.");
-  if (status === "published" && !content) throw new Error("Yayına almak için içerik gereklidir.");
-  if (type === "article" && !category) throw new Error("Hukuk yazısı için kategori zorunludur.");
+  if (!title) return { ok: false, message: "Başlık zorunludur." };
+  if (!slug) return { ok: false, message: "Slug zorunludur." };
+  if (!content) return { ok: false, message: "İçerik zorunludur." };
+  if (type === "article" && !category) {
+    return { ok: false, message: "Hukuk yazısı için kategori seçmelisiniz." };
+  }
 
-  await ensureUniqueSlug(slug, id || undefined);
+  try {
+    await ensureUniqueSlug(slug, id || undefined);
+  } catch {
+    return { ok: false, message: "Bu slug zaten kullanılıyor." };
+  }
 
   const imageUrl = lastStringValue(formData, "imageUrl");
   const supabase = createSupabaseAdminClient();
@@ -91,12 +111,16 @@ export async function saveArticleAction(formData: FormData) {
     updated_at: new Date().toISOString(),
   };
 
-  if (id) {
-    const { error } = await supabase.from("articles").update(data).eq("id", id);
-    if (error) throw new Error(error.message);
-  } else {
-    const { error } = await supabase.from("articles").insert(data);
-    if (error) throw new Error(error.message);
+  try {
+    if (id) {
+      const { error } = await supabase.from("articles").update(data).eq("id", id);
+      if (error) return { ok: false, message: "Kayıt sırasında bir sorun oluştu. Lütfen tekrar deneyiniz." };
+    } else {
+      const { error } = await supabase.from("articles").insert(data);
+      if (error) return { ok: false, message: "Kayıt sırasında bir sorun oluştu. Lütfen tekrar deneyiniz." };
+    }
+  } catch {
+    return { ok: false, message: "Kayıt sırasında bir sorun oluştu. Lütfen tekrar deneyiniz." };
   }
 
   if (previous?.data) {

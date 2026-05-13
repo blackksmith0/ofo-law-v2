@@ -979,6 +979,26 @@ h3 {
   text-transform: none;
 }
 
+.admin-form-alert {
+  margin: 0;
+  border: 1px solid rgba(199, 154, 69, 0.28);
+  border-radius: 6px;
+  padding: 13px 15px;
+  color: #0b1422;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.admin-form-alert.error {
+  border-color: rgba(120, 40, 40, 0.22);
+  background: rgba(120, 40, 40, 0.06);
+  color: #4a1f1f;
+}
+
+.admin-form-alert.success {
+  background: rgba(199, 154, 69, 0.11);
+}
+
 .admin-actions,
 .admin-filter-bar,
 .admin-row-actions,
