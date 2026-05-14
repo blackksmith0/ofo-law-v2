@@ -55,36 +55,36 @@ export const aboutSections = [
   {
     title: "Hakkımda",
     paragraphs: [
-      "Av. Ömer Faruk ÖZDEMİR, hukuki meselelerin yalnızca mevzuat hükümleriyle değil; olayın bütünlüğü, delillerin niteliği, yargılama pratiği ve doğru stratejiyle birlikte değerlendirilmesi gerektiğini benimseyen bir hukukçudur.",
-      "Hukuki uyuşmazlıklarda her dosyanın kendi koşulları içinde ele alınması gerektiğine inanmakta; bu doğrultuda hukukun teknik yapısını, anlaşılır bir anlatım ve uygulamaya dönük bir bakış açısıyla değerlendirmeye önem vermektedir.",
-      "Bu internet sitesi, Av. Ömer Faruk ÖZDEMİR’in hukuk alanındaki yazılarını, mesleki değerlendirmelerini ve uygulamadan hareketle oluşturduğu notları paylaşmak amacıyla hazırlanmıştır.",
+      "Av. Ömer Faruk Özdemir, hukuki meselelerin yalnızca mevzuat hükümleriyle değil; olayın bütünlüğü, delillerin niteliği, yargılama pratiği ve doğru stratejiyle birlikte değerlendirilmesi gerektiğini benimseyen bir hukukçudur.",
+      "Hukuki uyuşmazlıklarda her dosyanın kendi koşulları içinde ele alınması gerektiğine inanır. Bu doğrultuda hukukun teknik yapısını, anlaşılır bir anlatım ve uygulamaya dönük bir bakış açısıyla değerlendirmeye önem verir.",
+      "Bu internet sitesi, hukuk alanındaki yazıların, mesleki değerlendirmelerin ve uygulamadan hareketle oluşturulan notların paylaşılması amacıyla hazırlanmış kişisel bir hukuk platformudur.",
     ],
   },
   {
     title: "Eğitim",
     paragraphs: [
-      "Av. Ömer Faruk ÖZDEMİR, lisans eğitimini öncelikle Gazi Üniversitesi İktisadi ve İdari Bilimler Fakültesi Maliye Bölümü’nde tamamlamıştır. Maliye alanındaki eğitimi, özellikle ekonomik yönü bulunan hukuki uyuşmazlıkların, alacak ilişkilerinin, tazminat taleplerinin ve mali sonuç doğuran hukuki süreçlerin değerlendirilmesinde çok yönlü bir bakış açısı kazandırmıştır.",
-      "Maliye eğitiminin ardından Süleyman Demirel Üniversitesi Hukuk Fakültesi’nden mezun olmuş ve hukuk mesleğine bu akademik altyapı üzerine adım atmıştır.",
-      "Akademik çalışmalarını sürdüren Av. Ömer Faruk ÖZDEMİR, Atatürk Üniversitesi’nde İktisat Politikası alanında yüksek lisans eğitimine devam etmektedir. Hukuk, maliye ve iktisat politikası alanlarını bir araya getiren bu eğitim süreci; hukuki meseleleri yalnızca normatif yönüyle değil, ekonomik ve toplumsal sonuçlarıyla birlikte değerlendirebilmesine katkı sağlamaktadır.",
+      "Ömer Faruk Özdemir, lisans eğitimini öncelikle Gazi Üniversitesi İktisadi ve İdari Bilimler Fakültesi Maliye Bölümünde tamamlamıştır. Maliye alanındaki eğitimi; ekonomik yönü bulunan hukuki uyuşmazlıkların, alacak ilişkilerinin, tazminat taleplerinin ve mali sonuç doğuran süreçlerin değerlendirilmesinde çok yönlü bir bakış açısı kazandırmıştır.",
+      "Bu eğitimin ardından Süleyman Demirel Üniversitesi Hukuk Fakültesinden mezun olmuş ve hukuk mesleğine, maliye ile hukuk disiplinlerini birlikte değerlendirebileceği bir akademik altyapı üzerinde adım atmıştır.",
+      "Akademik çalışmalarını sürdüren Özdemir, Atatürk Üniversitesi’nde İktisat Politikası alanında yüksek lisans eğitimine devam etmektedir. Hukuk, maliye ve iktisat politikası alanlarını bir araya getiren bu süreç; hukuki meseleleri yalnızca normatif yönüyle değil, ekonomik ve toplumsal sonuçlarıyla birlikte değerlendirebilmesine katkı sağlamaktadır.",
     ],
   },
   {
     title: "Mesleki Yaklaşım",
     paragraphs: [
-      "Av. Ömer Faruk ÖZDEMİR, hukuki sürecin doğru yönetilmesinin yalnızca dava açmak veya dilekçe sunmaktan ibaret olmadığı kanaatindedir. Her uyuşmazlıkta öncelikle olay örgüsünün doğru kurulması, taraf beyanlarının dikkatle değerlendirilmesi, delillerin hukuki anlamının belirlenmesi ve sürecin muhtemel sonuçlarının öngörülmesi gerekir.",
-      "Bu yaklaşım çerçevesinde hukuki meseleler; somut olayın özellikleri, mevcut deliller, süreler, usuli imkanlar ve yargılama pratiği dikkate alınarak değerlendirilir. Amaç, hukuki süreci karmaşık ve anlaşılmaz bir yapı olmaktan çıkararak, açık, ölçülü ve takip edilebilir bir zeminde ele almaktır.",
-      "Özellikle ceza hukuku, iş hukuku, icra ve alacak hukuku, kira hukuku, tazminat hukuku, miras ve taşınmaz uyuşmazlıkları gibi alanlarda; her dosyanın kendine özgü koşulları bulunduğu kabul edilmekte ve değerlendirmeler bu gerçeklik üzerinden yapılmaktadır.",
-      "Av. Ömer Faruk ÖZDEMİR’in mesleki yaklaşımında; güçlü dilekçe dili, dosyaya özgü strateji, delil merkezli değerlendirme, yargılama sürecinin özenli takibi ve hukuki bilginin anlaşılır biçimde aktarılması temel unsurlar arasında yer almaktadır.",
+      "Hukuki sürecin doğru yönetilmesi, yalnızca dava açmak veya dilekçe sunmaktan ibaret değildir. Her uyuşmazlıkta öncelikle olay örgüsünün doğru kurulması, taraf beyanlarının dikkatle değerlendirilmesi, delillerin hukuki anlamının belirlenmesi ve sürecin muhtemel sonuçlarının öngörülmesi gerekir.",
+      "Bu yaklaşım çerçevesinde hukuki meseleler; somut olayın özellikleri, mevcut deliller, süreler, usuli imkânlar ve yargılama pratiği dikkate alınarak ele alınır. Amaç, hukuki süreci karmaşık ve anlaşılmaz bir yapı olmaktan çıkararak açık, ölçülü ve takip edilebilir bir zeminde değerlendirmektir.",
+      "Ceza hukuku, iş hukuku, icra ve alacak hukuku, kira hukuku, tazminat hukuku, miras ve taşınmaz uyuşmazlıkları gibi alanlarda her dosyanın kendine özgü koşulları bulunduğu kabul edilir. Bu nedenle değerlendirmeler, genel kabullerden ziyade somut olayın delilleri ve uygulanabilir hukuki yolları üzerinden yapılır.",
+      "Mesleki yaklaşımın temelinde; güçlü dilekçe dili, dosyaya özgü strateji, delil merkezli değerlendirme, yargılama sürecinin özenli takibi ve hukuki bilginin anlaşılır biçimde aktarılması yer alır.",
     ],
   },
   {
     title: "Bu Site Hakkında",
     paragraphs: [
-      "Bu site, Av. Ömer Faruk ÖZDEMİR’in kişisel hukuk platformu olarak hazırlanmıştır. Sitenin temel amacı; hukuk alanındaki yazıları, mesleki değerlendirmeleri, uygulamada karşılaşılan sorunlara ilişkin notları ve hukuki süreçlere dair açıklamaları okuyucularla paylaşmaktır.",
-      "Burada yer alan içerikler, yalnızca belirli hukuk alanlarında genel bilgi vermek amacıyla değil; aynı zamanda hukuki meselelerin nasıl değerlendirilmesi gerektiğine ilişkin bir bakış açısı sunmak amacıyla kaleme alınmaktadır. Bu nedenle sitedeki yazılar, klasik ve yüzeysel bilgilendirme metinlerinden ziyade, uygulamaya dönük, delil ve süreç odaklı, hukuki değerlendirme niteliği taşıyan yazılar olarak tasarlanmaktadır.",
-      "Sitede ceza hukuku, iş hukuku, icra hukuku, kira hukuku, tazminat hukuku, miras hukuku ve taşınmaz uyuşmazlıkları başta olmak üzere çeşitli alanlarda yazılar yayımlanması amaçlanmaktadır. Bunun yanında “uygulamadan notlar” niteliğindeki içeriklerle; ifade alma süreci, delil değerlendirmesi, bilirkişi raporlarına itiraz, icra takiplerinde açıklama kısmının önemi, dava dilekçesinde olay örgüsünün kurulması gibi pratik konulara da yer verilecektir.",
-      "Bu internet sitesi bir hukuk bürosu tanıtım sayfasından ziyade, Av. Ömer Faruk ÖZDEMİR’in hukuk alanındaki düşüncelerini, mesleki yaklaşımını ve yazılarını paylaşmayı amaçlayan kişisel bir hukuk platformudur.",
-      "Sitede yer alan tüm yazılar genel bilgilendirme ve hukuki değerlendirme amacı taşımaktadır. Her hukuki uyuşmazlık kendi somut koşulları, delilleri, süreleri ve tarafların durumuna göre ayrıca değerlendirilmelidir. Bu nedenle burada yer alan içerikler, somut olay özelinde hukuki danışmanlık yerine geçmez.",
+      "Bu site, kişisel bir hukuk platformu olarak hazırlanmıştır. Temel amacı; hukuk alanındaki yazıları, mesleki değerlendirmeleri, uygulamada karşılaşılan sorunlara ilişkin notları ve hukuki süreçlere dair açıklamaları okuyucularla paylaşmaktır.",
+      "Burada yer alan içerikler, yalnızca belirli hukuk alanlarında genel bilgi vermek amacıyla değil; aynı zamanda hukuki meselelerin nasıl değerlendirilmesi gerektiğine ilişkin bir bakış açısı sunmak için kaleme alınmaktadır. Bu nedenle yazılar, klasik ve yüzeysel bilgilendirme metinlerinden ziyade, uygulamaya dönük, delil ve süreç odaklı hukuki değerlendirmeler olarak tasarlanmaktadır.",
+      "Sitede ceza hukuku, iş hukuku, icra hukuku, kira hukuku, tazminat hukuku, miras hukuku ve taşınmaz uyuşmazlıkları başta olmak üzere çeşitli alanlarda yazılar yayımlanması amaçlanmaktadır. Bunun yanında “uygulamadan notlar” niteliğindeki içeriklerle; ifade alma süreci, delil değerlendirmesi, bilirkişi raporlarına itiraz, icra takiplerinde açıklama kısmının önemi ve dava dilekçesinde olay örgüsünün kurulması gibi pratik konulara da yer verilecektir.",
+      "Bu internet sitesi, bir hukuk bürosu tanıtım sayfasından ziyade; hukuk alanındaki düşüncelerin, mesleki yaklaşımın ve uygulamaya dönük yazıların paylaşılması amacıyla oluşturulmuş kişisel bir yayın alanıdır.",
+      "Sitede yer alan tüm yazılar genel bilgilendirme ve hukuki değerlendirme amacı taşır. Her hukuki uyuşmazlık; somut koşulları, delilleri, süreleri ve tarafların durumu dikkate alınarak ayrıca değerlendirilmelidir. Bu nedenle burada yer alan içerikler, somut olay özelinde hukuki danışmanlık yerine geçmez.",
     ],
   },
 ];

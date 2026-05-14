@@ -4,9 +4,9 @@ import { aboutSections } from "@/lib/content";
 import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Av. Ömer Faruk ÖZDEMİR Hakkında | Ankara Avukat",
+  title: "Av. Ömer Faruk Özdemir Hakkında | Ankara Avukat",
   description:
-    "Av. Ömer Faruk ÖZDEMİR’in eğitim geçmişi, mesleki yaklaşımı ve hukuk alanındaki kişisel yayın platformu hakkında bilgi alın.",
+    "Av. Ömer Faruk Özdemir’in eğitim geçmişi, mesleki yaklaşımı ve hukuk alanındaki kişisel yayın platformu hakkında bilgi alın.",
   path: "/hakkimda",
 });
 
@@ -21,9 +21,9 @@ export default function AboutPage() {
       />
       <section className="page-hero compact">
         <p className="eyebrow">Kişisel Profil</p>
-        <h1>Av. Ömer Faruk ÖZDEMİR</h1>
+        <h1>Av. Ömer Faruk Özdemir</h1>
         <p>
-          Av. Ömer Faruk ÖZDEMİR, hukuki meselelerin yalnızca mevzuat hükümleriyle
+          Av. Ömer Faruk Özdemir, hukuki meselelerin yalnızca mevzuat hükümleriyle
           değil; olayın bütünlüğü, delillerin niteliği, yargılama pratiği ve doğru
           stratejiyle birlikte değerlendirilmesi gerektiğini benimseyen bir hukukçudur.
         </p>
